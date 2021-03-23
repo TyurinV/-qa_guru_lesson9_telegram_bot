@@ -34,6 +34,7 @@ public class TestBase {
         attachScreenshot("Last screenshot");
         attachPageSource();
         attachVideo();
+        attachAsText("Browser console logs", getConsoleLogs());
         closeWebDriver();
     }
 }
